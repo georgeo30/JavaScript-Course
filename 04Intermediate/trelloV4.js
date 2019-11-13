@@ -22,12 +22,24 @@ const newTodos=[{
 
 // console.log(index)
 
-const findTodo=function(myTodos,title){
-    const index=myTodos.findIndex(function(todo,index){
-        return todo.title.toLowerCase()===title.toLowerCase()
-    })
-    return myTodos[index]
-}
+// //method1
+// const findTodo=function(myTodos,title){
+//     const index=myTodos.findIndex(function(todo,index){
+//         return todo.title.toLowerCase()===title.toLowerCase()
+//     })
+//     return myTodos[index]
+// }
 
+// let printMe=findTodo(newTodos,'Go to gym')
+// console.log(printMe)
+
+
+//Method 2
+const findTodo=function(myTodos,title){
+    const titlereturn=myTodos.find(function(todo,index){
+        return todo.title.toLowerCase()===title.toLowerCase();
+    })
+    return titlereturn
+}
 let printMe=findTodo(newTodos,'Go to gym')
 console.log(printMe)
