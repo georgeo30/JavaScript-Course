@@ -18,9 +18,28 @@ const todos=[{
 },{
     title: 'Record youtube video',
     isDone: false,
+},{
+    title:  'Take pain medication',
+    isDone: false
+},{
+    title:  'Eat healthy',
+    isDone: true
+},{
+    title:  'Call friend and wish happy birthday',
+    isDone: false
 }]
 
 
 const thingsDone=todos.filter((todo)=> todo.isDone===true)
 
-console.log(thingsDone)
+const isNotDone=todos.filter((todo)=> {
+    if(todo.isDone===false){
+        console.log(todo.title)
+    }
+
+})
+
+let returnS=isNotDone;
+returnS.forEach(element => {
+    console.log(element.title)
+});
