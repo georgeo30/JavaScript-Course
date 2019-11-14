@@ -23,8 +23,11 @@ users.set('john',john)  //'john'(first parameter) is the key, john(second param 
 users.set('marry',marry)
 users.set('sam',sam) 
 
-console.log(users.size)
-console.log(users.get('john'))
-console.log(users.keys())
-console.log(users.values())
+// console.log(users.size)
+// console.log(users.get('john'))
+// console.log(users.keys())
+// console.log(users.values())
 
+for (const key of users.values()) {
+    console.log(key.name)
+}
