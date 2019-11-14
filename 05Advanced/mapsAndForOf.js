@@ -31,3 +31,9 @@ users.set('sam',sam)
 for (const key of users.values()) {
     console.log(key.name)
 }
+
+for (const [key,value] of users.entries()) {
+    console.log(`${key}=${value.name}`)
+}
+
+users.forEach((value,key)=>console.log(`${key}=${value.name}`))
