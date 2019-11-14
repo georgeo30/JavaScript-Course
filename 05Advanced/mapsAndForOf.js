@@ -37,3 +37,9 @@ for (const [key,value] of users.entries()) {
 }
 
 users.forEach((value,key)=>console.log(`${key}=${value.name}`))
+
+var arrOfArr=[['one','1'],['two','2'],['three','3']]
+
+var newMap=new Map(arrOfArr)
+
+console.log(newMap)
