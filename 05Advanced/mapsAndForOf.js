@@ -23,4 +23,8 @@ users.set('john',john)  //'john'(first parameter) is the key, john(second param 
 users.set('marry',marry)
 users.set('sam',sam) 
 
-console.log(users)
+console.log(users.size)
+console.log(users.get('john'))
+console.log(users.keys())
+console.log(users.values())
+
